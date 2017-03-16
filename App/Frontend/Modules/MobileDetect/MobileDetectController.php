@@ -10,9 +10,11 @@
 namespace App\Frontend\Modules\MobileDetect;
 
 use \OCFram\BackController;
+use \OCFram\MainController;
 
 class MobileDetectController extends BackController
 {
+    use MainController;
     public function executeDetect()
     {
         $this->createMenu();

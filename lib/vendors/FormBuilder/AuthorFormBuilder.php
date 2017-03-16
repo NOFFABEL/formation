@@ -9,8 +9,7 @@
 namespace FormBuilder;
 
 
-use OCFram\EmailValidator;
-use OCFram\EqualToValidator;
+use \OCFram\EmailValidator;
 use \OCFram\FormBuilder;
 use \OCFram\StringField;
 use \OCFram\MaxLengthValidator;

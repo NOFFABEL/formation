@@ -13,7 +13,8 @@
         <title><?= isset($title) ? $title : 'Mon super site' ?></title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" href="/css/Envision.css" type="text/css" />
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.js"></script>
+        <script type="text/javascript" src="/js/allFunctions.js"></script>
     </head>
 
     <body>
@@ -21,6 +22,9 @@
             <header>
                 <h1><a href="/">Mon super site</a></h1>
                 <p>Comment ca, il n'y a presque rien ?</p>
+                <p><br /></p>
+                <p style="margin-left: 80%;"><?=$connected;?></p>
+                <p><br /></p>
             </header>
             <nav>
                 <ul>
@@ -44,5 +48,7 @@
 
             <footer></footer>
         </div>
+        <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>-->
+        
     </body>
 </html>

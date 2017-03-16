@@ -36,7 +36,14 @@ class Page extends ApplicationComponnent
         {
             throw new \RuntimeException('La vue spécifiée n\'existe pas');
         }
-
+        
+        if ($socket = @fsockopen('www.google.fr', 80, $errno, $errstr, 20))
+        {
+            $connected =  'ON LINE';
+        } else {
+            $connected = 'OFF LINE';
+        }
+        
         $user = $this->app->user();
 
         extract($this->vars);
